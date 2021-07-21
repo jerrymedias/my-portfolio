@@ -1,0 +1,17 @@
+:root{
+    --day-main-gradient: rgba(126, 213, 111, 0.8);
+    --day-sub-gradient: rgba(40, 180, 131, 0.8);
+    --night-sub-gradient: rgba(139,147,154, 0.8);
+    --night-main-gradient: rgba(91,100,103, 0.8);
+}
+
+.header-container {
+    height: 95vh;
+    position: relative;
+}
+
+.toggle-container {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+}
