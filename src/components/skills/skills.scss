@@ -1,0 +1,64 @@
+@import "../../sass/abstracts/variables";
+
+.day {
+    background-image: linear-gradient(
+        to right bottom,
+        $day-sub-gradient,
+        $day-main-gradient),
+    url('../../assets/images/header-background.jpg');
+    background-position: bottom;
+}
+
+.night {
+    background-image: linear-gradient(
+        to right bottom,
+        $night-main-gradient,
+        $night-sub-gradient),
+    url('../../assets/images/dark-background.jpg');
+    background-position: center;
+}
+
+.section-skills {
+    background-size: cover;
+    padding: 20rem 0;
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+
+    & > * {
+        transform: skewY(7deg);
+    }
+
+    .heading-secondary {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        display: inline-block;
+        color: rgba($color-white, 1);
+        letter-spacing: .2rem;
+        transition: all .2s;
+
+        &:hover {
+            transform: skewY(2deg) skewX(-15deg) scale(1.1);
+            text-shadow: .5rem 1rem 2rem #00000042;
+        }
+    }
+
+    .skill-box {
+        background-color: rgba($color-white, .8);
+        font-size: 1.5rem;
+        padding: 2.5rem;
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        transition: transform .3s;
+
+        &:hover {
+            transform: translateY(-1.5rem) scale(1.03);
+        }
+
+        .skill-logo {
+            width: 100%;
+            height: 21rem;
+        }
+    }
+}

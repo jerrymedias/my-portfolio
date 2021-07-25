@@ -24,10 +24,11 @@ function Headers(props) {
                     </span>
                 </h1>
 
-                <a href="#" className="btn btn-white btn-animated">Let's Start</a>
+                <a href="#about" className="btn btn-white btn-animated">Go to about</a>
             </div>
         </header>
     );
+
 }
 
 export default Headers;
