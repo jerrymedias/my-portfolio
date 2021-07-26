@@ -24,8 +24,8 @@ function About(props) {
                         </p>
                         <h2 className="heading-tertiary u-margin-bottom-small">Some of my Interests</h2>
                         <p className="paragraph">
-                            I love to talk about Programming, Sports, Learning And Implementing New Technologies.<br/>
-                            If that interests you let's connect on <a href="https://www.linkedin.com/in/ngraj" target="_blank" className="link">LinkedIn</a>
+                            I love to talk about Programming, Sports and also love to Learn and Implement New Technologies.<br/>
+                            If that interests you let's connect on <a href="https://www.linkedin.com/in/ngraj" target="_blank" className="link">Linkedin</a>
                         </p>
                         <a href="#skills" className={"btn-text " + (props.toggleValue ? 'night-btn' : 'day-btn')}>See my skills &rarr;</a>
                     </div>
