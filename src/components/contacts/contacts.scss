@@ -1,0 +1,55 @@
+@import "../../sass/abstracts/variables";
+
+.section-contacts {
+    padding: 20rem 0;
+    
+}
+
+.day-contact {
+    background-image: linear-gradient($day-sub-gradient, $day-main-gradient);
+}
+
+.night-contact {
+    background-image: linear-gradient($night-sub-gradient, $night-main-gradient);
+}
+
+.pic-area {
+    background-image: url(../../assets/images/my-hill-pic.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 60rem;
+}
+
+.contact-area {
+    height: 60rem;
+    background-color: rgba($color-grey-light-1, .8);
+    padding: 2rem;
+}
+
+.whole-area {
+    box-shadow: 0 1rem 2.5rem rgba($color-black, .4);
+    border-radius: 2px;
+}
+
+.contact-logo {
+    height: 13rem;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover,
+    &:active {
+        transform: translateY(-1rem);
+    }
+}
+
+h2 {
+    margin-bottom: 4rem;
+}
+
+.number-mail {
+    font-size: $default-font-size;
+    font-weight: 700;
+    &:first-child{
+        margin-top: -3rem;
+    }
+}

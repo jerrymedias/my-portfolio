@@ -10,7 +10,7 @@ function Skills(props) {
     return (
         <section className={"section-skills " + (props.toggleValue ? 'night-mode' : 'day-mode')} id="skills">
             <div className="u-center-text u-margin-bottom-big">
-                <h2 className="heading-secondary">My Skills</h2>
+                <h2 className="heading-secondary">My Major Skills</h2>
             </div>
             <div className="row">
                 <div className="col-1-of-4">

@@ -7,6 +7,7 @@ import Skills from './components/skills/skills';
 import WorkExperience from './components/work-experience/workExperience';
 import Projects from './components/projects/projects';
 import Navigation from './components/navigation/navigation';
+import Contacts from './components/contacts/contacts';
 
 function App() {
   const [toggleValue, setToggleValue] = useState(false);
@@ -24,6 +25,7 @@ function App() {
           <Skills toggleValue={toggleValue} />
           <WorkExperience toggleValue={toggleValue} />
           <Projects toggleValue={toggleValue} />
+          <Contacts toggleValue={toggleValue} />
         </main>
       </div>
     </React.Fragment>

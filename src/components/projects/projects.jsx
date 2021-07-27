@@ -61,7 +61,7 @@ function Projects(props) {
             </div>
 
             <div className="u-center-text u-margin-top-huge">
-                <a href="#contact" className={"btn-text " + (props.toggleValue ? 'night-btn' : 'day-btn')}>Go to Contacts &rarr;</a>
+                <a href="#contacts" className={"btn-text " + (props.toggleValue ? 'night-btn' : 'day-btn')}>Go to Contacts &rarr;</a>
             </div>
         </section>
     );
