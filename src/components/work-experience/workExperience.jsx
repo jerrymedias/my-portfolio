@@ -6,7 +6,7 @@ import nxtlifeLogo from "../../assets/images/nxtlife-logo.png";
 
 function WorkExperience(props) {
     return (
-        <section className="section-experience">
+        <section className="section-experience" id="work-experience">
             <div className="u-center-text u-margin-bottom-big">
                 <h2 className={"heading-secondary " + (props.toggleValue ? 'night' : 'day')}>
                     My Work Experience

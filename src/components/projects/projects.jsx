@@ -8,7 +8,7 @@ import coverVideoWebm from "../../assets/video/video.webm";
 
 function Projects(props) {
     return(
-        <section className="section-projects">
+        <section className="section-projects" id="projects">
 
             <CoverVideo video={{coverVideoMp4, coverVideoWebm}}/>
 

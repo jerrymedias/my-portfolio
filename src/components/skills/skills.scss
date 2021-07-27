@@ -1,15 +1,15 @@
 @import "../../sass/abstracts/variables";
 
-.day {
+.day-mode {
     background-image: linear-gradient(
         to right bottom,
         $day-sub-gradient,
         $day-main-gradient),
-    url('../../assets/images/header-background.jpg');
+    url('../../assets/images/skill-light.jpg');
     background-position: bottom;
 }
 
-.night {
+.night-mode {
     background-image: linear-gradient(
         to right bottom,
         $night-main-gradient,

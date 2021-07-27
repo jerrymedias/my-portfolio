@@ -31,9 +31,9 @@ function About(props) {
                     </div>
                     <div className="col-1-of-2">
                     <div className="composition">
-                        <img src={myself2} alt="Photo 1" className={(props.toggleValue ? 'mode-night ' : 'mode-day ') + "composition__photo composition__photo--p1"} />
+                        <img src={myself1} alt="Photo 1" className={(props.toggleValue ? 'mode-night ' : 'mode-day ') + "composition__photo composition__photo--p1"} />
                         <img src={myself3} alt="Photo 2" className={(props.toggleValue ? 'mode-night ' : 'mode-day ') + "composition__photo composition__photo--p2"} />
-                        <img src={myself1} alt="Photo 3" className={(props.toggleValue ? 'mode-night ' : 'mode-day ') + "composition__photo composition__photo--p3"} />
+                        <img src={myself2} alt="Photo 3" className={(props.toggleValue ? 'mode-night ' : 'mode-day ') + "composition__photo composition__photo--p3"} />
                     </div>
                     </div>
                 </div>

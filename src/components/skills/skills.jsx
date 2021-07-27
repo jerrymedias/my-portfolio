@@ -8,7 +8,7 @@ import react from "../../assets/images/react.png"
 
 function Skills(props) {
     return (
-        <section className={"section-skills " + (props.toggleValue ? 'night' : 'day')} id="skills">
+        <section className={"section-skills " + (props.toggleValue ? 'night-mode' : 'day-mode')} id="skills">
             <div className="u-center-text u-margin-bottom-big">
                 <h2 className="heading-secondary">My Skills</h2>
             </div>
