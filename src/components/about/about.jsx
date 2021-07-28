@@ -27,7 +27,7 @@ function About(props) {
                             I love to talk about Programming, Sports and also love to Learn and Implement New Technologies.<br/>
                             If that interests you let's connect on <a href="https://www.linkedin.com/in/ngraj" target="_blank" className="link">Linkedin</a>
                         </p>
-                        <a href="#skills" className={"btn-text " + (props.toggleValue ? 'night-btn' : 'day-btn')}>See my skills &rarr;</a>
+                        <a href="#skills" className={"btn-text " + (props.toggleValue ? 'night-btn' : 'day-btn')}>See my skills &darr;</a>
                     </div>
                     <div className="col-1-of-2">
                     <div className="composition">
