@@ -8,6 +8,7 @@ import WorkExperience from './components/work-experience/workExperience';
 import Projects from './components/projects/projects';
 import Navigation from './components/navigation/navigation';
 import Contacts from './components/contacts/contacts';
+import Footer from './components/footer/footer';
 
 function App() {
   const [toggleValue, setToggleValue] = useState(false);
@@ -27,6 +28,7 @@ function App() {
           <Projects toggleValue={toggleValue} />
           <Contacts toggleValue={toggleValue} />
         </main>
+        <Footer />
       </div>
     </React.Fragment>
   );
