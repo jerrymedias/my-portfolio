@@ -6,11 +6,29 @@
         to right bottom,
         $day-sub-gradient,
         $day-main-gradient),
-    url('../../assets/images/skill-light.jpg');
+    url('../../assets/images/skill-light.webp');
     background-position: bottom;
 }
 
 .night-mode {
+    background-image: linear-gradient(
+        to right bottom,
+        $night-main-gradient,
+        $night-sub-gradient),
+    url('../../assets/images/dark-background.webp');
+    background-position: center;
+}
+
+.day-modesafari {
+    background-image: linear-gradient(
+        to right bottom,
+        $day-sub-gradient,
+        $day-main-gradient),
+    url('../../assets/images/skill-light.jpg');
+    background-position: bottom;
+}
+
+.night-modesafari {
     background-image: linear-gradient(
         to right bottom,
         $night-main-gradient,

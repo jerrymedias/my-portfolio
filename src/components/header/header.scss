@@ -6,6 +6,15 @@
         to right bottom,
         $day-sub-gradient,
         $day-main-gradient),
+    url('../../assets/images/header-background.webp');
+    background-position: bottom;
+}
+
+.daysafari {
+    background-image: linear-gradient(
+        to right bottom,
+        $day-sub-gradient,
+        $day-main-gradient),
     url('../../assets/images/header-background.jpg');
     background-position: bottom;
 }
@@ -15,8 +24,21 @@
         to right bottom,
         $night-main-gradient,
         $night-sub-gradient),
+    url('../../assets/images/skill-dark.webp');
+    background-position: center;
+}
+
+.nightsafari {
+    background-image: linear-gradient(
+        to right bottom,
+        $night-main-gradient,
+        $night-sub-gradient),
     url('../../assets/images/skill-dark.jpg');
     background-position: center;
+}
+
+.pic {
+    height: 100%;
 }
 
 .header {

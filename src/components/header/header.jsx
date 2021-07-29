@@ -4,7 +4,7 @@ import React from 'react';
 function Headers(props) {
 
     return (
-        <header className={"header " + (props.toggleValue ? 'night' : 'day')} id="home">
+        <header className={"header " + (props.toggleValue ? 'night' : 'day') + props.class} id="home">
             <div className="text-box">
                 <h1 className="heading-primary">
                     <span className="heading-primary-main">

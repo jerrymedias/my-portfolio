@@ -13,17 +13,19 @@ import Footer from './components/footer/footer';
 function App() {
   const [toggleValue, setToggleValue] = useState(false);
 
+  const changeDayNightClassInCaseOfSafariBrowser = window.safari !== undefined ? 'safari' : '';
+
   return (
     <React.Fragment>
       <Navigation toggleValue={toggleValue}/>
       <div className="header-container">
-        <Headers toggleValue={toggleValue} />
+        <Headers toggleValue={toggleValue} class={changeDayNightClassInCaseOfSafariBrowser}/>
         <div className="toggler-container">
           <DayNightToggle setToggleValue={setToggleValue}/>
         </div>
         <main>
           <About toggleValue={toggleValue} />
-          <Skills toggleValue={toggleValue} />
+          <Skills toggleValue={toggleValue} class={changeDayNightClassInCaseOfSafariBrowser}/>
           <WorkExperience toggleValue={toggleValue} />
           <Projects toggleValue={toggleValue} />
           <Contacts toggleValue={toggleValue} />
