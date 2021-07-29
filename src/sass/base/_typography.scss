@@ -10,9 +10,21 @@
         letter-spacing: .2rem;
         transition: all .2s;
 
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+
+        @include respond(phone) {
+            font-size: 2.5rem;
+        }
+
         &:hover {
             transform: skewY(2deg) skewX(15deg) scale(1.1);
             text-shadow: .5rem 1rem 2rem #00000042;
+
+            @include respond(phone) {
+                transform: skewY(2deg) skewX(7deg) scale(1.1);
+            }
         }
     }
 

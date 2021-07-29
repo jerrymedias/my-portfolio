@@ -1,4 +1,5 @@
 @import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixin";
 
 .navigation {
     &__checkbox {
@@ -17,6 +18,18 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
+
+        @include respond(tab-port) {
+            top: 1.5rem;
+            right: 1.5rem;
+            height: 5rem;
+            width: 5rem;
+        }
+
+        @include respond(phone) {
+            top: 2rem;
+            right: 2rem;
+        }
     }
 
     &__background {
@@ -28,6 +41,19 @@
         border-radius: 50%;
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+
+        @include respond(tab-port) {
+            top: 2rem;
+            right: 2rem;
+            height: 4rem;
+            width: 4rem;
+        }
+
+        @include respond(phone) {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
+        
     }
 
     &__nav {
@@ -98,6 +124,10 @@
         position: relative;
         margin-top: 3.5rem;
 
+        @include respond(tab-port) {
+            margin-top: 2.5rem;
+        }
+
         &,
         &::after,
         &::before {
@@ -117,10 +147,18 @@
 
         &::before {
             top: -.8rem;
+
+            @include respond(tab-port) {
+                top: -.7rem;
+            }
         }
 
         &::after {
             top: .8rem;
+            
+            @include respond(tab-port) {
+                top: .8rem;
+            }
         }
     }
 

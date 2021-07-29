@@ -7,3 +7,47 @@
     }
     
 }
+
+// MEDIA QUERY MANAGER
+
+/*
+0 - 600px:            Phones
+600 - 900px:          Tablets potrait
+900 - 1200px:         Tablets Landscape
+1200 - 1800px:        Desktop view all the normal styles apply
+1800px+:              Big Desktop
+*/
+
+// @mixin respone-phone {
+//     @media (max-width: 600px) {
+//         @content
+//     };
+// }
+
+/*
+$breakpoints arguments choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 600px) {@content}; //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) {@content}; //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) {@content}; //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) {@content}; //1800px
+    }
+}

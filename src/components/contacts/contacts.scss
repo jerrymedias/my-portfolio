@@ -1,8 +1,12 @@
 @import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixin";
 
 .section-contacts {
     padding: 20rem 0;
     
+    @include respond(tab-port) {
+        padding: 20rem 2rem;
+    }
 }
 
 .day-contact {
@@ -18,6 +22,11 @@
     background-size: 100%;
     background-position: center;
     height: 60rem;
+
+    @include respond(tab-port) {
+        background-size: 225%;
+        background-position: top;
+    }
 }
 
 .contact-area {
@@ -36,6 +45,10 @@
     cursor: pointer;
     transition: all .3s;
 
+    @include respond(tab-port) {
+        height: 7rem;
+    }
+
     &:hover,
     &:active {
         transform: translateY(-1rem);
@@ -51,5 +64,18 @@ h2 {
     font-weight: 700;
     &:first-child{
         margin-top: -3rem;
+    }
+}
+
+.contact-row {
+
+    @include respond(tab-port) {
+        margin-bottom: 0 !important;
+    }
+
+    &-col {
+        @include respond(tab-port) {
+            padding: 1rem 5rem !important;
+        }
     }
 }

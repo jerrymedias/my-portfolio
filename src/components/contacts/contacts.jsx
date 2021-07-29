@@ -40,25 +40,25 @@ function Contacts(props) {
                                 Contacts
                             </h2>
 
-                            <div className="row">
-                                <div className="col-1-of-2">
+                            <div className="row contact-row">
+                                <div className="col-1-of-2 contact-row-col">
                                     <img src={linkedinLogo} alt="logo" className="contact-logo" onClick={() => openMySocialMedia('linkedin')}/>
                                 </div>
-                                <div className="col-1-of-2">
+                                <div className="col-1-of-2 contact-row-col">
                                     <img src={githubLogo} alt="logo" className="contact-logo" onClick={() => openMySocialMedia('github')}/>
                                 </div>
                             </div>
 
-                            <div className="row">
-                                <div className="col-1-of-2">
+                            <div className="row contact-row">
+                                <div className="col-1-of-2 contact-row-col">
                                     <img src={instaLogo} alt="logo" className="contact-logo" onClick={() => openMySocialMedia('insta')}/>
                                 </div>
-                                <div className="col-1-of-2">
+                                <div className="col-1-of-2 contact-row-col">
                                     <img src={facebookLogo} alt="logo" className="contact-logo" onClick={() => openMySocialMedia('facebook')}/>
                                 </div>
                             </div>
 
-                            <div className="row">
+                            <div className="row contact-row">
                                 <div className="number-mail">
                                     <span className="label">Mobile No. : </span>
                                     <span className="label-value">+919193326895</span>

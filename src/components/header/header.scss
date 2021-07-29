@@ -1,4 +1,5 @@
 @import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixin";
 
 .day {
     background-image: linear-gradient(
@@ -22,7 +23,13 @@
     height: 100%;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
+
+    @include respond(phone) {
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
 }
 
 .logo-box {
@@ -38,7 +45,7 @@
 .text-box {
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 45%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -47,6 +54,10 @@
     color: $color-white;
     backface-visibility: hidden;
     margin-bottom: 10rem;
+
+    @include respond(phone) {
+        margin-bottom: 7rem;
+    }
     
     &-main {
         display: block;
@@ -62,45 +73,5 @@
         font-weight: 700;
         letter-spacing: .5rem;
         animation: moveInRight 2s ease-in-out;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .logo {
-        height: 7rem;
-    }
-
-    .btn:link, .btn:visited {
-        font-size: 1.4rem;
-        padding: .7rem 2rem;
-    }
-
-    .heading-primary-main {
-        font-size: 3.5rem;
-    }
-
-    .heading-primary-sub {
-        font-size: 1.8rem;
-        margin-top: 2rem;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 475px) {
-
-    .night {
-        background-position: right;
-    }
-
-    .btn:link, .btn:visited {
-        font-size: 1.2rem;
-        padding: .5rem 1.5rem;
-    }
-
-    .heading-primary-main {
-        font-size: 2rem;
-    }
-
-    .heading-primary-sub {
-        font-size: 1.2rem;
     }
 }
