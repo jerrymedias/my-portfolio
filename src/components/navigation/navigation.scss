@@ -102,8 +102,7 @@
             }
         }
 
-        &:hover,
-        &:active {
+        &:hover {
             background-position: 100%;
             transform: translateX(1rem);
         }
