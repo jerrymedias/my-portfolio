@@ -34,13 +34,20 @@ function Projects(props) {
                             application to configure, monitor, and control traffic junctions. It has a
                             robust API framework for seamless integration with any central
                             command and control applications.
+                         </p>
+                            <p>
                             • Integrated OpenStreet map to pin traffic junctions according to their
                             latitude a longitude on map.
+                            </p>
+                           <p>
                             • Implemented my own prototype of graph plotting live signals
                             running on traffic junction every second on each arm through
                             WebSocket.
+                            </p>
+                            <p>
                             • By WebSocket you can trigger different signals on any of the arms
-                            on traffic junction as 
+                            on traffic junction as per need like in case of any emergency occurred
+                            on any of the arm.
                         </p>
                     </div>
                 </div>
@@ -60,10 +67,14 @@ function Projects(props) {
                         <p>
                            • Kairos Planning is an ERP application which is built on a global level in
                              order to plan future shifts of staff of any organization unit.
+                         </p>
+                        <p>
                            • An ERP application which was build on global level in order to plan future shifts of staff of any particular organizational unit. Global admin can add any numbers of country and mark a admin of it on default level, 
                             Country admin can add any number of organization and each organization manager can add their different unit running across the country 
                             and each unit manager can add different staff with their skills and expertise and staffs can plan their future shifts also can sell their shifts 
                             can calculate their pay etc. Different module views according to level of users only the global admin has access to all modules.
+                        </p>
+                        <p>
                             • Implemented Lazy loading in 800+ components and improved the
                             performance of the app. app.bundle size was decreased to 2.8mb
                             from 17.4mb and load time of application from 19 sec to 5 sec.
