@@ -1,37 +1,35 @@
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
 
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
 
-    .heading-secondary {
-        font-size: 3.5rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        display: inline-block;
-        -webkit-background-clip: text;
-        color: transparent;
-        letter-spacing: .2rem;
-        transition: all .2s;
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
 
-        @include respond(tab-port) {
-            font-size: 3rem;
-        }
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem #00000042;
 
         @include respond(phone) {
-            font-size: 2.5rem;
-        }
-
-        &:hover {
-            transform: skewY(2deg) skewX(15deg) scale(1.1);
-            text-shadow: .5rem 1rem 2rem #00000042;
-
-            @include respond(phone) {
-                transform: skewY(2deg) skewX(7deg) scale(1.1);
-            }
+            transform: skewY(2deg) skewX(7deg) scale(1.1);
         }
     }
+}
 
 
 
-    .heading-tertiary {
-        font-size: $default-font-size;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
+.heading-tertiary {
+    font-size: $default-font-size;
+    text-transform: uppercase;
+    font-weight: 700;
+}

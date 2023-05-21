@@ -69,8 +69,8 @@
                     font-weight: 300;
                     display: block;
 
-                    &:nth-last-child(2) {
-                        margin-bottom: 4rem;
+                    &:nth-last-child(1) {
+                        margin-top: 4rem;
                     }
                 }
 
@@ -108,7 +108,7 @@
 
     .paragraph {
         font-size: $default-font-size;
-        color: $color-white;
+        color: $color-black;
 
         &:not(:last-child) {
             margin-bottom: 3rem;

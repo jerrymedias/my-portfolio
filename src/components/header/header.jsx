@@ -11,7 +11,7 @@ function Headers(props) {
                         Hi! I'm Ravi Raj Singh
                     </span>
                     <span className="heading-primary-sub">
-                        A Frontend Engineer with 2+ years of experince
+                        Frontend Engineer with 3+ years of experince
                     </span>
                     <span className="heading-primary-sub" style={{marginTop: 20 + 'px'}}>
                         JavaScript | Angular | React
