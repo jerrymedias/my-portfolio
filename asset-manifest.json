@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.0ed9dc4a.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.8b278c12.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.8b278c12.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.82076a30.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.363e6270.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.363e6270.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.835d7565.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.835d7565.js.map",
     "static/js/2.5438a924.chunk.js": "/my-portfolio/static/js/2.5438a924.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.bd70c7d4.chunk.js": "/my-portfolio/static/js/3.bd70c7d4.chunk.js",
     "static/js/3.bd70c7d4.chunk.js.map": "/my-portfolio/static/js/3.bd70c7d4.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "static/css/main.0ed9dc4a.chunk.css.map": "/my-portfolio/static/css/main.0ed9dc4a.chunk.css.map",
+    "static/css/main.82076a30.chunk.css.map": "/my-portfolio/static/css/main.82076a30.chunk.css.map",
     "static/js/2.5438a924.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.5438a924.chunk.js.LICENSE.txt",
     "static/media/angular-ngrx.efabfac4.png": "/my-portfolio/static/media/angular-ngrx.efabfac4.png",
     "static/media/atcs-logo.8a148287.jpg": "/my-portfolio/static/media/atcs-logo.8a148287.jpg",
@@ -26,16 +26,16 @@
     "static/media/myself1.44d93da4.jpg": "/my-portfolio/static/media/myself1.44d93da4.jpg",
     "static/media/myself2.f9bebf3d.jpg": "/my-portfolio/static/media/myself2.f9bebf3d.jpg",
     "static/media/myself3.f6f7d512.jpg": "/my-portfolio/static/media/myself3.f6f7d512.jpg",
-    "static/media/nxtlife-logo.84ef78f6.png": "/my-portfolio/static/media/nxtlife-logo.84ef78f6.png",
     "static/media/oodles-logo.4906fbb4.png": "/my-portfolio/static/media/oodles-logo.4906fbb4.png",
     "static/media/react.a56f333f.png": "/my-portfolio/static/media/react.a56f333f.png",
+    "static/media/tata-1mg.889b7771.png": "/my-portfolio/static/media/tata-1mg.889b7771.png",
     "static/media/video.05624469.mp4": "/my-portfolio/static/media/video.05624469.mp4",
     "static/media/video.2cf70a56.webm": "/my-portfolio/static/media/video.2cf70a56.webm"
   },
   "entrypoints": [
     "static/js/runtime-main.835d7565.js",
     "static/js/2.5438a924.chunk.js",
-    "static/css/main.0ed9dc4a.chunk.css",
-    "static/js/main.8b278c12.chunk.js"
+    "static/css/main.82076a30.chunk.css",
+    "static/js/main.363e6270.chunk.js"
   ]
 }
