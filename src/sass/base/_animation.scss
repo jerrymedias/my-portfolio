@@ -1,3 +1,46 @@
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+
+@keyframes fade-out {
+  to { opacity: 0; }
+}
+
+@keyframes slide-from-right {
+  from { transform: translateX(50vw); }
+}
+
+@keyframes slide-to-left {
+  to { transform: translateX(-50vw); }
+}
+
+//to make all the page transitions from left to right
+::view-transition-old(root) {
+  animation: 90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+    200ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+}
+
+::view-transition-new(root) {
+  animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+    200ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+}
+
+::view-transition-old(bottom-up) {
+    // animation: moveInBottom .5s ease-in-out .75s;
+}
+
+::view-transition-new(bottom-up) {
+  height: auto;
+  -webkit-transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+  transition: opacity 0.3s ease-out, bottom 0.3s ease-out;
+}
+
+.no-transition {
+  view-transition-name: no-transition;
+}
+
 @keyframes moveInLeft {
     0% {
         opacity: 0;
@@ -39,5 +82,17 @@
     100% {
         opacity: 1;
         transform: translate(0);
+    }
+}
+
+@keyframes moveInUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0dvh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(100dvh);
     }
 }

@@ -8,7 +8,7 @@ function DayNightToggle(props) {
     }
 
     return (
-        <label>
+        <label className='day-night-toggle'>
             <input className='toggle-checkbox' type='checkbox' onClick={handleToggleChange}></input>
             <div className='toggle-slot'>   
                 <div className='sun-icon-wrapper'>

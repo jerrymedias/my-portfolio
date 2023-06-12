@@ -4,9 +4,14 @@ import js from "../../assets/images/js.png";
 import htmlCss from "../../assets/images/html-css.png";
 import angularNgrx from "../../assets/images/angular-ngrx.png";
 import react from "../../assets/images/react.png"
+import { scrollToTop } from "../../utils";
 
 
 function Skills(props) {
+
+    // React.useEffect(() => {
+    //     setTimeout(() => scrollToTop(), 400)
+    // }, [])
     return (
         <section className={"section-skills " + (props.toggleValue ? 'night-mode' : 'day-mode') + props.class} id="skills">
             <div className="u-center-text u-margin-bottom-big">

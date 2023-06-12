@@ -1,10 +1,21 @@
+@import "src/sass/abstracts/_variables.scss";
+@import "src/sass/abstracts/_mixin.scss";
 .header-container {
-    height: 95vh;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .toggle-container {
     position: absolute;
     top: 5%;
     right: 3%;
+}
+
+.outlet-height {
+    min-height: calc(100dvh - 12rem);
+    margin-top: 11rem;
+    @include respond(phone) {
+        min-height: calc(100dvh - 13rem);
+        margin-top: 8rem;
+    }
 }

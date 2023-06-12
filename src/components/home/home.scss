@@ -1,22 +1,21 @@
 @import "../../sass/abstracts/variables";
 @import "../../sass/abstracts/mixin";
 
-.header_main {
+.day {
     background-image: linear-gradient(
         to right bottom,
-        #a7a7a7cc,
-        $day-main-gradient);
+        $day-sub-gradient,
+        $day-main-gradient),
+    url('../../assets/images/header-background.webp');
     background-position: bottom;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .daysafari {
     background-image: linear-gradient(
         to right bottom,
         $day-sub-gradient,
-        $day-main-gradient);
+        $day-main-gradient),
+    url('../../assets/images/header-background.jpg');
     background-position: bottom;
 }
 
@@ -24,7 +23,8 @@
     background-image: linear-gradient(
         to right bottom,
         $night-main-gradient,
-        $night-sub-gradient);
+        $night-sub-gradient),
+    url('../../assets/images/skill-dark.webp');
     background-position: center;
 }
 
@@ -32,7 +32,8 @@
     background-image: linear-gradient(
         to right bottom,
         $night-main-gradient,
-        $night-sub-gradient);
+        $night-sub-gradient),
+    url('../../assets/images/skill-dark.jpg');
     background-position: center;
 }
 
@@ -40,19 +41,16 @@
     height: 100%;
 }
 
-.header {
-    height: 11rem;
+.home {
+    height:  calc(100dvh - 100px);
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    position: fixed;
-    width: 100vw;
-    z-index: 1;
+    // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
 
     @include respond(phone) {
-        height: 8rem;
-        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        // clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     }
 }
 
@@ -97,32 +95,5 @@
         font-weight: 700;
         letter-spacing: .5rem;
         animation: moveInRight 2s ease-in-out;
-    }
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-
-    @include respond(phone) {
-        visibility: hidden;
-    }
-
-    &_link {
-        font-size: 1.8rem;
-        font-weight: 600;
-        margin-left: 4rem;
-        cursor: pointer;
-        animation: 0.2s;
-        color: rgb(102, 112, 86);
-        padding: 0.8rem;
-
-
-        &:hover {
-            background-color: #ffffcb;
-            border-radius: 0.5rem;
-        }
     }
 }

@@ -3,8 +3,12 @@ import "./workExperience.scss";
 import sapientLogo from "../../assets/images/Publicis-Sapient-Logo.png";
 import oodlesLogo from "../../assets/images/oodles-logo.png";
 import tata1mgLogo from "../../assets/images/tata-1mg.png";
+import { scrollToTop } from "../../utils";
 
 function WorkExperience(props) {
+    // React.useEffect(() => {
+    //     setTimeout(() => scrollToTop(), 400)
+    // }, [])
     return (
         <section className="section-experience" id="work-experience">
             <div className="u-center-text u-margin-bottom-big">

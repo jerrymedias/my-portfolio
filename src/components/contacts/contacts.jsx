@@ -4,9 +4,12 @@ import linkedinLogo from "../../assets/images/linkedin.png";
 import githubLogo from "../../assets/images/Github.jpg";
 import facebookLogo from "../../assets/images/fb.png";
 import instaLogo from "../../assets/images/insta.png";
+import { scrollToTop } from "../../utils";
 
 function Contacts(props) {
-
+    // React.useEffect(() => {
+    //     setTimeout(() => scrollToTop(), 400)
+    // }, [])
     const openMySocialMedia = (media) => {
         let link = '';
         switch (media) {

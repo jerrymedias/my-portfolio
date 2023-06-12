@@ -1,12 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import './about.scss';
 import myself1 from "../../assets/images/myself1.jpg";
 import myself2 from "../../assets/images/myself2.jpg";
 import myself3 from "../../assets/images/myself3.jpg";
+import { viewTransitionAPI } from "../../utils";
 
 function About(props) {
+    const navigate = useNavigate();
+
     return(
-            <section className="section-about" id="about">
+            <section className="full-embed section-about" id="about">
                 <div className="u-center-text u-margin-bottom-big">
                     <h2 className={"heading-secondary " + (props.toggleValue ? 'night' : 'day')}>
                         Exciting things about me
@@ -32,7 +36,9 @@ function About(props) {
                             I love to talk about tech, sports and also love to learn and implement new technologies.<br/>
                             If that interests you let's connect on <a href="https://www.linkedin.com/in/ngraj" target="_blank" className="link">Linkedin</a>
                         </p>
-                        <a href="#skills" className={"btn-text " + (props.toggleValue ? 'night-btn' : 'day-btn')}>See my skills &darr;</a>
+                        <a href="" onClick={(event) => {
+                            viewTransitionAPI(navigate, "/skills", event, "bottom-up")
+                        }} className={"btn-text skill_anchor" + (props.toggleValue ? 'night-btn' : 'day-btn')}>See my skills &darr;</a>
                     </div>
                     <div className="col-1-of-2">
                     <div className="composition">

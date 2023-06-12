@@ -19,6 +19,7 @@
     z-index: 9999;
     top: 3rem;
     font-size: 1.5rem;
+    view-transition-name: toggle-slot;
   }
   
   .toggle-checkbox:checked ~ .toggle-slot {

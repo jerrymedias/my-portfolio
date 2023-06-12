@@ -1,8 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./footer.scss";
 import logo from "../../assets/images/bunny-logo.png";
+import { viewTransitionAPI } from "../../utils";
 
 function Footer() {
+    const navigate = useNavigate();
+
     return(
         <footer className="footer">
             <div className="footer__logo-box">
@@ -13,12 +17,24 @@ function Footer() {
                 <div className="col-1-of-2">
                     <div className="footer__navigation">
                         <ul className="footer__list">
-                            <li className="footer__item"><a href="#home" className="footer__link">Home</a></li>
-                            <li className="footer__item"><a href="#about" className="footer__link">About</a></li>
-                            <li className="footer__item"><a href="#skills" className="footer__link">Skills</a></li>
-                            <li className="footer__item"><a href="#work-experience" className="footer__link">Work</a></li>
-                            <li className="footer__item"><a href="#projects" className="footer__link">Projects</a></li>
-                            <li className="footer__item"><a href="#contacts" className="footer__link">Contacts</a></li>
+                            <li className="footer__item"><a href="#home" className="footer__link" onClick={(event) => {
+                                viewTransitionAPI(navigate, "/home", event)
+                            }}>Home</a></li>
+                            <li className="footer__item"><a href="#about" className="footer__link" onClick={(event) => {
+                                viewTransitionAPI(navigate, "/about", event)
+                            }}>About</a></li>
+                            <li className="footer__item"><a href="#skills" className="footer__link" onClick={(event) => {
+                                viewTransitionAPI(navigate, "/skills", event)
+                            }}>Skills</a></li>
+                            <li className="footer__item"><a href="#work-experience" className="footer__link" onClick={(event) => {
+                                viewTransitionAPI(navigate, "/experience", event)
+                            }}>Work</a></li>
+                            <li className="footer__item"><a href="#projects" className="footer__link" onClick={(event) => {
+                                viewTransitionAPI(navigate, "/projects", event)
+                            }}>Projects</a></li>
+                            <li className="footer__item"><a href="#contacts" className="footer__link" onClick={(event) => {
+                                viewTransitionAPI(navigate, "/contacts", event)
+                            }}>Contacts</a></li>
                         </ul>
                     </div>
                 </div>

@@ -1,25 +1,29 @@
 import './header.scss';
 import React from 'react';
+import { useNavigate } from "react-router-dom";
+import { viewTransitionAPI } from '../../utils';
+import DayNightToggle from '../day-night-toggle/dayNightToggle';
+import Navigation from '../navigation/navigation';
 
 function Headers(props) {
+    const navigate = useNavigate();
+    const [toggleValue, setToggleValue] = React.useState(false);
 
     return (
-        <header className={"header " + (props.toggleValue ? 'night' : 'day') + props.class} id="home">
-            <div className="text-box">
-                <h1 className="heading-primary">
-                    <span className="heading-primary-main">
-                        Hi! I'm Ravi Raj Singh
-                    </span>
-                    <span className="heading-primary-sub">
-                        Frontend Engineer with 3+ years of experince
-                    </span>
-                    <span className="heading-primary-sub" style={{marginTop: 20 + 'px'}}>
-                        JavaScript | Angular | React
-                    </span>
-                </h1>
-
-                <a href="#about" className="btn btn-white btn-animated">Go to about</a>
-            </div>
+        <header className={"no-transition header " + (props.toggleValue ? 'night' : 'header_main') + props.class} id="home">
+            {/* <DayNightToggle /> */}
+            <nav className='nav'>
+                {["Home", "About", "Projects", "Experience", "Contacts"].map((ele) => {
+                    return (
+                        <div className='nav_link' key={ele}
+                            onClick={(event) => {
+                                viewTransitionAPI(navigate, `/${ele.toLowerCase()}`, event)
+                            }}
+                        >{ele}</div>
+                    )
+                })}
+            </nav>
+            <Navigation toggleValue={toggleValue} />
         </header>
     );
 

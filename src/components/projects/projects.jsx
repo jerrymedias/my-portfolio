@@ -5,8 +5,12 @@ import kairos from "../../assets/images/kairos.jpg"
 import CoverVideo from "../cover-video/coverVideo";
 import coverVideoMp4 from "../../assets/video/video.mp4";
 import coverVideoWebm from "../../assets/video/video.webm";
+import { scrollToTop } from "../../utils";
 
 function Projects(props) {
+    // React.useEffect(() => {
+    //     setTimeout(() => scrollToTop(), 400)
+    // }, [])
     return(
         <section className="section-projects" id="projects">
 
